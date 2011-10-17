@@ -60,10 +60,13 @@ describe "Enumerable" do
       
       it "should return a new array with each element changed" do
 
-        formatted_list = students.map do |student| 
-          student.upcase
-          puts student.upcase
-        end
+        formatted_list = students.map { |student| student.upcase }
+		
+		# not sure why i can't get the do...end notation to work
+		#students.map do |student|
+        #  formatted_list = formatted_list.push(student.upcase)
+        #  puts student.upcase
+        #end
         
         formatted_list.should eq %w[ DAVID SAURABH SAGE THOMAS DANIEL CATHERINE JOEL ]
 

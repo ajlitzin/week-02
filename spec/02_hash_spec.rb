@@ -62,7 +62,7 @@ describe Hash do
       # testing if the key :name has the value 'Erik'
       my_hash[:name].should eq 'Erik'
 
-      # keys will give you an array or keys
+      # keys will give you an array of keys
       my_hash.keys.should eq [ :name ]
 
       # values will give you an array of values
@@ -163,8 +163,9 @@ describe "Failing Specs" do
   # function/method. Add or change any keys or values to make all of the examples
   # pass.
   def favorites
-    { :animal => 'giraffe', 
-      :color => 'blue', 
+    { :animal => 'tiger',
+	  :season => 'fall',
+      :color => 'green', 
       :drink => 'bloody mary', 
       :food => 'steak' }
   end
